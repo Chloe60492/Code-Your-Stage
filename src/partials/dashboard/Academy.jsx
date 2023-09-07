@@ -18,7 +18,7 @@ function Academy() {
     labels,
     datasets: [
       {
-        label: "Distribution of colleges",
+        label: "bution of colleges",
         data: values,
         backgroundColor: values?.map(() => getRandomColor()),
         borderWidth: 0
@@ -27,7 +27,7 @@ function Academy() {
   };
 
   return (
-    <div className="flex flex-col col-span-full dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700">
+    <div className="flex flex-col col-span-full bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700">
       <header className="px-5 py-4 border-b border-slate-100 dark:border-slate-700">
         <h2 className="font-semibold text-slate-800 dark:text-slate-100">
           Distribution of colleges

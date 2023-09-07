@@ -54,7 +54,7 @@ function Grade() {
         </h2>
       </header>
       {/* Chart built with Chart.js 3 */}
-      <div className="flex justify-center px-8 pb-4 min-h-[400px]">
+      <div className="flex justify-center px-8 pb-4 min-h-[500px]">
         <Bar options={options} data={data} width={200} height={300} />
       </div>
     </div>

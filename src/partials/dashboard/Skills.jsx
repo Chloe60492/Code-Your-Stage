@@ -42,16 +42,16 @@ function Skills() {
   };
 
   return (
-    <div className="flex">
-      <header className="">
+    <div className="flex flex-col col-span-12 sm:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
+      <header className="px-5 py-4">
         <h2 className="font-semibold text-slate-800 dark:text-slate-100">
           Skills
         </h2>
       </header>
       {studentId ? (
-        <div className="flex align-center flex-col px-28">
+        <div className="flex justify-center flex-col px-14 bg-white  dark:bg-slate-800">
           <div className="text-center my-4">學號：{studentId}</div>
-          <Radar data={chartData} />
+          <Radar data={chartData} width={300} height={300}/>
         </div>
       ) : (
         <div className="pt-20 text-center">尚未輸入數值，請先送出右方表單</div>

@@ -27,7 +27,7 @@ function ApplicationTime() {
   };
 
   return (
-    <div className="col-span-12 xl:col-span-8 bg-slate-800 dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700">
+    <div className="col-span-12 xl:col-span-8 bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700">
       <div className="px-5 pt-5">
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
           Application Time
@@ -47,7 +47,7 @@ function ApplicationTime() {
       {/* Chart built with Chart.js 3 */}
       <div className="grow">
         {/* Change the height attribute to adjust the chart height */}
-        {labels && <LineChart data={chartData} width={389} height={250} />}
+        {labels && <LineChart data={chartData} width={389} height={390} />}
       </div>
     </div>
   );
