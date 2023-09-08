@@ -1,10 +1,10 @@
 import DoughnutChart from "../../charts/DoughnutChart";
-import { academyStats } from "../../data/mockData";
-// import useAcademystats from "../../hooks/dashboard/useAcademystats";
+// import { academyStats } from "../../data/mockData"; //mock data
+import useAcademystats from "../../hooks/dashboard/useAcademystats"; //API
 
 function Academy() {
-  // const { labels, values } = useAcademystats();
-  const { labels, values } = academyStats;
+  const { labels, values } = useAcademystats();
+  // const { labels, values } = academyStats;
   // 生成隨機色碼的函式
   const getRandomColor = () => {
     const letters = "0123456789ABCDEF";
