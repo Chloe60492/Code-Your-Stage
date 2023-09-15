@@ -2,7 +2,8 @@ import useSWRFetch from "../useSWRFetch";
 
 const useApplicationStats = () => {
   const { data } = useSWRFetch(
-    "https://api.projectszero.tech/applicationStats"
+    // "https://api.projectszero.tech/applicationStats"
+    "https://api.projectszero.tech/getApplicationStats"
   );
   const transformDate = (dateStr) => {
     const parts = dateStr.split("/");

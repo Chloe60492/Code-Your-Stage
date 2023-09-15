@@ -1,9 +1,12 @@
+import { data } from "autoprefixer";
 import DoughnutChart from "../../charts/DoughnutChart";
-// import { academyStats } from "../../data/mockData"; //mock data
+// import { academyStats } from "../../data/mockData";
 import useAcademystats from "../../hooks/dashboard/useAcademystats"; //API
 
 function Academy() {
   const { labels, values } = useAcademystats();
+  // console.log(Object.values(values));
+  // console.log(Object.values(labels));
   // const { labels, values } = academyStats;
   // 生成隨機色碼的函式
   const getRandomColor = () => {
